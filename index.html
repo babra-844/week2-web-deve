@@ -6,11 +6,24 @@
     <title>spendwise</title>
 </head>
 <body>
+    <header>
+    <img src="logo.png" alt="Budget Tracker Logo" width="60">
+    <h1>My Budget Tracker</h1>
+</header>
     <section id="expenses">
     <h2>Expenses</h2>
 
+</section>
     <table>
-        <thead>
+ 
+            <details>
+    <summary>How to use this tracker</summary>
+    <p>
+        Use the form above to enter the name, amount, category, and date
+        of an expense. The expense information can then be displayed
+        in the table below.
+    </p>
+</details>
             <tr>
                 <th>Name</th>
                 <th>Amount</th>
@@ -53,5 +66,41 @@
         </tbody>
     </table>
 </section>
+    ```html
+<section id="add-expense">
+    <h2>Add Expense</h2>
+
+    <form>
+        <label for="expense-name">Expense Name:</label>
+        <input type="text" id="expense-name" name="expense-name">
+
+        <label for="expense-amount">Amount:</label>
+        <input type="number" id="expense-amount" name="expense-amount">
+
+        <label for="expense-category">Category:</label>
+        <select id="expense-category" name="expense-category">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="rent">Rent</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="expense-date">Date:</label>
+        <input type="date" id="expense-date" name="expense-date">
+
+        <button type="button">Add Expense</button>
+    </form>
+</section>
+       <thead><section id="budgeting-video">
+    <h2>Budgeting Tips</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Budgeting Tips Video"
+        frameborder="0">
+    </iframe>
 </body>
 </html>
