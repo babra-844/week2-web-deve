@@ -3,108 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spendwise</title>
-     <link rel="stylesheet" href="styles .css">
+
+    <title>SpendWise - My Budget Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-    <img src="logo.png" alt="Budget Tracker Logo" width="60">
-    <h1>My Budget Tracker</h1>
-</header>
-    <section id="expenses">
-    <h2>Expenses</h2>
+        <img src="logo.png" alt="SpendWise Budget Tracker Logo" width="60">
+        <h1>My Budget Tracker</h1>
+    </header>
 
-</section>
-    
+    <main>
+
+        <section id="expenses">
+            <h2>Expenses</h2>
+
             <details>
-    <summary>How to use this tracker</summary>
-    <p>
-        Use the form above to enter the name, amount, category, and date
-        of an expense. The expense information can then be displayed
-        in the table below.
-    </p>
-                
-    <table>
-</details>
-</section>
-</thead>
-            <tr>
-                <th>Name</th>
-                <th>Amount</th>
-                <th>Category</th>
-                <th>Date</th>
-            </tr>
-        </thead>
+                <summary>How to use this tracker</summary>
 
-        <tbody>
-            <tr>
-                <td>Lunch</td>
-                <td>$10</td>
-                <td>Food</td>
-                <td>2026-10-01</td>
-            </tr>
-            <tr>
-                <td>Bus Fare</td>
-                <td>$5</td>
-                <td>Transport</td>
-                <td>2026-10-02</td>
-            </tr>
-            <tr>
-                <td>Movie</td>
-                <td>$15</td>
-                <td>Entertainment</td>
-                <td>2026-10-03</td>
-            </tr>
-            <tr>
-                <td>Groceries</td>
-                <td>$30</td>
-                <td>Food</td>
-                <td>2026-10-04</td>
-            </tr>
-            <tr>
-                <td>Rent</td>
-                <td>$200</td>
-                <td>Rent</td>
-                <td>2026-10-05</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-    ```html
-<section id="add-expense">
-    <h2>Add Expense</h2>
+                <p>
+                    Use the form below to enter the name, amount, category,
+                    and date of an expense.
+                </p>
+            </details>
 
-    <form>
-        <label for="expense-name">Expense Name:</label>
-        <input type="text" id="expense-name" name="expense-name">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
 
-        <label for="expense-amount">Amount:</label>
-        <input type="number" id="expense-amount" name="expense-amount">
+                <tbody>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>$10</td>
+                        <td>Food</td>
+                        <td>2026-10-01</td>
+                    </tr>
 
-        <label for="expense-category">Category:</label>
-        <select id="expense-category" name="expense-category">
-            <option value="food">Food</option>
-            <option value="transport">Transport</option>
-            <option value="rent">Rent</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="other">Other</option>
-        </select>
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>$5</td>
+                        <td>Transport</td>
+                        <td>2026-10-02</td>
+                    </tr>
 
-        <label for="expense-date">Date:</label>
-        <input type="date" id="expense-date" name="expense-date">
+                    <tr>
+                        <td>Movie</td>
+                        <td>$15</td>
+                        <td>Entertainment</td>
+                        <td>2026-10-03</td>
+                    </tr>
 
-        <button type="button">Add Expense</button>
-    </form>
-</section>
-       <thead><section id="budgeting-video">
-    <h2>Budgeting Tips</h2>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$30</td>
+                        <td>Food</td>
+                        <td>2026-10-04</td>
+                    </tr>
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        title="Budgeting Tips Video"
-        frameborder="0">
-    </iframe>
+                    <tr>
+                        <td>Rent</td>
+                        <td>$200</td>
+                        <td>Rent</td>
+                        <td>2026-10-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-expense">
+            <h2>Add Expense</h2>
+
+            <form>
+
+                <label for="expense-name">Expense Name:</label>
+                <input
+                    type="text"
+                    id="expense-name"
+                    name="expense-name"
+                >
+
+                <label for="expense-amount">Amount:</label>
+                <input
+                    type="number"
+                    id="expense-amount"
+                    name="expense-amount"
+                >
+
+                <label for="expense-category">Category:</label>
+
+                <select
+                    id="expense-category"
+                    name="expense-category"
+                >
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="expense-date">Date:</label>
+
+                <input
+                    type="date"
+                    id="expense-date"
+                    name="expense-date"
+                >
+
+                <button type="button">Add Expense</button>
+
+            </form>
+        </section>
+
+        <section id="budgeting-video">
+            <h2>Budgeting Tips</h2>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Budgeting Tips Video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+    </main>
+
 </body>
 </html>
